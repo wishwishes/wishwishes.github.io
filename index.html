@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨洋 | 主治医师 · 广州医科大学附属妇女儿童医疗中心</title>
+    <meta name="description" content="杨洋 - 广州医科大学附属妇女儿童医疗中心 PICU 主治医师，儿科学教研室教学秘书">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text" data-i18n="logoText">杨洋的个人主页</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link"><span data-i18n="navAbout">个人简介</span></a>
+                <a href="#expertise" class="nav-link"><span data-i18n="navExpertise">专业领域</span></a>
+                <a href="#teaching" class="nav-link"><span data-i18n="navTeaching">教学工作</span></a>
+                <a href="#philosophy" class="nav-link"><span data-i18n="navPhilosophy">行医理念</span></a>
+                <a href="#welfare" class="nav-link"><span data-i18n="navWelfare">公益项目</span></a>
+                <a href="#contact" class="nav-link"><span data-i18n="navContact">联系我</span></a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link"><span data-i18n="navAbout">个人简介</span></a>
+        <a href="#expertise" class="mobile-link"><span data-i18n="navExpertise">专业领域</span></a>
+        <a href="#teaching" class="mobile-link"><span data-i18n="navTeaching">教学工作</span></a>
+        <a href="#philosophy" class="mobile-link"><span data-i18n="navPhilosophy">行医理念</span></a>
+        <a href="#welfare" class="mobile-link"><span data-i18n="navWelfare">公益项目</span></a>
+        <a href="#contact" class="mobile-link"><span data-i18n="navContact">联系我</span></a>
+    </div>
+
+    <!-- 背景装饰 -->
+    <div class="bg-decoration">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <!-- 首屏 Hero -->
+        <section class="hero-section" id="hero">
+            <div class="hero-layout">
+                <!-- 左侧：头像 + 个人信息 -->
+                <div class="hero-left">
+                    <div class="hero-avatar">
+                        <div class="avatar-wrapper">
+                            <div class="avatar">
+                                <img src="images/photo.jpg" alt="杨洋医生工作照" class="avatar-img">
+                            </div>
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-ring ring-2"></div>
+                        </div>
+                    </div>
+                    <div class="hero-info">
+                        <h1 class="hero-name">杨洋</h1>
+                        <p class="hero-title lang-zh">主治医师 · Attending Physician</p>
+                        <p class="hero-title lang-en">Attending Physician · PICU</p>
+                        <p class="hero-unit lang-zh">
+                            <a href="https://www.gzfezx.com/" target="_blank" rel="noopener">广州医科大学附属妇女儿童医疗中心</a> · <a href="https://www.gzfezx.com/division/show/106.html" target="_blank" rel="noopener">儿童重症监护室PICU</a>
+                        </p>
+                        <p class="hero-role">
+                            <a href="https://www.gzhmu.edu.cn/" target="_blank" rel="noopener">广州医科大学</a>·儿科学院 · 儿科学教研室教学秘书
+                        </p>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary"><span data-i18n="heroContact">联系我</span></a>
+                        <a href="#about" class="btn btn-secondary"><span data-i18n="heroMore">了解更多</span></a>
+                    </div>
+                </div>
+
+                <!-- 右侧：金句气泡 -->
+                <div class="hero-right">
+                    <div class="quote-bubble" id="quote-bubble">
+                        <p class="quote-bubble-text" id="quote-bubble-text">加载中...</p>
+                        <p class="quote-bubble-text-en" id="quote-bubble-text-en">Loading...</p>
+                    </div>
+                    <div class="quote-hour" id="quote-hour"></div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span data-i18n="scrollDown">向下滚动</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- 个人简介 -->
+        <section class="section about-section" id="about">
+            <div class="section-container">
+                <h2 class="section-title" data-i18n="aboutTitle">个人简介</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lang-zh">
+                            广州医科大学附属妇女儿童医疗中心儿童重症监护室（PICU）主治医师，
+                            同时担任广州医科大学·儿科学院儿科学教研室教学秘书，
+                            长期从事儿科重症临床、教学与科研工作。
+                        </p>
+                        <p class="lang-en">
+                            Attending Physician of the Pediatric Intensive Care Unit (PICU) at Guangzhou Women and Children's Medical Center, also serving as Teaching Secretary of the Department of Pediatrics, School of Pediatrics, Guangzhou Medical University. Engaged in pediatric critical care clinical practice, teaching and research for years.
+                        </p>
+                        <p class="lang-zh">
+                            在儿科重症监护领域积累了丰富的临床经验，擅长儿童危重症的诊治与管理。
+                            同时致力于医学教育，参与儿科学课程设计与教学评估，
+                            努力培养下一代优秀的儿科医生。
+                        </p>
+                        <p class="lang-en">
+                            With extensive clinical experience in pediatric intensive care, specializing in diagnosis, treatment and management of critical pediatric conditions. Committed to medical education, participating in curriculum design and teaching evaluation, dedicated to nurturing the next generation of outstanding pediatricians.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i data-lucide="stethoscope"></i></div>
+                            <div class="stat-number">PICU</div>
+                            <div class="stat-label">儿童重症监护</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i data-lucide="graduation-cap"></i></div>
+                            <div class="stat-number">教学秘书</div>
+                            <div class="stat-label">儿科学教研室</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i data-lucide="flask"></i></div>
+                            <div class="stat-number">科研管理</div>
+                            <div class="stat-label">临床研究</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 专业领域 -->
+        <section class="section expertise-section" id="expertise">
+            <div class="section-container">
+                <h2 class="section-title" data-i18n="expertiseTitle">专业领域</h2>
+                <p class="section-subtitle" data-i18n="expertiseSubtitle">专注于儿童重症医学，结合临床与科研，守护重症患儿生命安全</p>
+
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i data-lucide="heart-pulse"></i></div>
+                        <h3 class="expertise-name" data-i18n="expCritical">儿童危重症诊治</h3>
+                        <p class="expertise-desc" data-i18n="expCriticalDesc">脓毒性休克、急性呼吸窘迫综合征（ARDS）、重症肺炎、癫痫持续状态、多器官功能障碍综合征（MODS）等危重症的早期识别与综合救治</p>
+                    </div>
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i data-lucide="shield-check"></i></div>
+                        <h3 class="expertise-name" data-i18n="expMonitor">重症监护管理</h3>
+                        <p class="expertise-desc" data-i18n="expMonitorDesc">PICU患儿病情评估、治疗方案制定、生命支持设备管理，保障患儿安全</p>
+                    </div>
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i data-lucide="microscope"></i></div>
+                        <h3 class="expertise-name" data-i18n="expResearch">临床科研</h3>
+                        <p class="expertise-desc" data-i18n="expResearchDesc">参与多项儿科重症相关临床研究，致力于将科研成果转化为临床实践</p>
+                    </div>
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i data-lucide="graduation-cap"></i></div>
+                        <h3 class="expertise-name" data-i18n="expEducation">医学教育</h3>
+                        <p class="expertise-desc" data-i18n="expEducationDesc">承担儿科学课程教学，负责教学大纲修订、教学评估与规培生管理</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 教学工作 -->
+        <section class="section teaching-section" id="teaching">
+            <div class="section-container">
+                <h2 class="section-title" data-i18n="teachingTitle">教学工作</h2>
+                <p class="section-subtitle" data-i18n="teachingSubtitle">广州医科大学·儿科学院 · 儿科学教研室教学秘书</p>
+
+                <div class="teaching-content">
+                    <div class="teaching-card">
+                        <div class="teaching-icon"><i data-lucide="book-open"></i></div>
+                        <h3 data-i18n="teach1Title">课程设计</h3>
+                        <p data-i18n="teach1Text">参与儿科学课程教学大纲修订，优化课程结构与教学内容，提升教学质量</p>
+                    </div>
+
+                    <div class="teaching-card">
+                        <div class="teaching-icon"><i data-lucide="clipboard-check"></i></div>
+                        <h3 data-i18n="teach2Title">教学评估</h3>
+                        <p data-i18n="teach2Text">负责DOPS形成性评价表制作与实施，建立科学的教学评估体系</p>
+                    </div>
+
+                    <div class="teaching-card">
+                        <div class="teaching-icon"><i data-lucide="users"></i></div>
+                        <h3 data-i18n="teach3Title">规培管理</h3>
+                        <p data-i18n="teach3Text">承担规培轮转排班管理，覆盖多年级规培生，保障教学进度有序进行</p>
+                    </div>
+
+                    <div class="teaching-card">
+                        <div class="teaching-icon"><i data-lucide="stethoscope"></i></div>
+                        <h3 data-i18n="teach4Title">临床带教</h3>
+                        <p data-i18n="teach4Text">指导本科生及规培生临床实习，将理论与实践相结合，培养临床思维能力</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行医理念 -->
+        <section class="section philosophy-section" id="philosophy">
+            <div class="section-container">
+                <h2 class="section-title" data-i18n="philosophyTitle">行医理念</h2>
+
+                <div class="philosophy-content">
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon"><i data-lucide="heart-pulse"></i></div>
+                        <h3 data-i18n="phil1Title">生命至上</h3>
+                        <p data-i18n="phil1Text">重症监护室里的每一分钟都至关重要。以最严谨的态度对待每一个生命，不放过任何一丝希望。</p>
+                    </div>
+
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon"><i data-lucide="heart"></i></div>
+                        <h3 data-i18n="phil2Title">人文关怀</h3>
+                        <p data-i18n="phil2Text">医学不仅是技术的较量，更是人性的坚守。在救治的同时，给予患儿和家庭最温暖的陪伴。</p>
+                    </div>
+
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon"><i data-lucide="handshake"></i></div>
+                        <h3 data-i18n="phil3Title">教学相长</h3>
+                        <p data-i18n="phil3Text">在教学与临床中不断反思与成长。每一个学生的提问，都是对自己知识体系的再次审视。</p>
+                    </div>
+
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon"><i data-lucide="microscope"></i></div>
+                        <h3 data-i18n="phil4Title">循证实践</h3>
+                        <p data-i18n="phil4Text">紧跟医学前沿，将最新循证医学证据应用于临床实践，让每一个治疗决策都有据可依。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 公益项目 -->
+        <section class="section welfare-section" id="welfare">
+            <div class="section-container">
+                <h2 class="section-title" data-i18n="welfareTitle">公益项目</h2>
+
+                <div class="welfare-content">
+                    <div class="welfare-card">
+                        <div class="welfare-icon"><i data-lucide="book-heart"></i></div>
+                        <h3 data-i18n="welfare1Title">儿童健康科普</h3>
+                        <p data-i18n="welfare1Text">参与社区儿童健康科普讲座，传播儿童疾病预防知识，帮助家长掌握基本急救技能。</p>
+                    </div>
+
+                    <div class="welfare-card">
+                        <div class="welfare-icon"><i data-lucide="stethoscope"></i></div>
+                        <h3 data-i18n="welfare2Title">基层医疗帮扶</h3>
+                        <p data-i18n="welfare2Text">定期赴基层医院开展儿科重症诊疗指导，提升基层医疗机构儿童危重症救治能力。</p>
+                    </div>
+
+                    <div class="welfare-card">
+                        <div class="welfare-icon"><i data-lucide="baby"></i></div>
+                        <h3 data-i18n="welfare3Title">重症患儿救助</h3>
+                        <p data-i18n="welfare3Text">参与贫困重症患儿医疗救助项目，为困难家庭链接社会资源，减轻因病致贫负担。</p>
+                    </div>
+
+                    <div class="welfare-card">
+                        <div class="welfare-icon"><i data-lucide="presentation"></i></div>
+                        <h3 data-i18n="welfare4Title">医学知识普及</h3>
+                        <p data-i18n="welfare4Text">通过新媒体平台分享儿科医学知识，用通俗语言解读专业内容，让健康知识走进千家万户。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="section contact-section" id="contact">
+            <div class="section-container">
+                <h2 class="section-title" data-i18n="contactTitle">联系我</h2>
+                <p class="section-subtitle" data-i18n="contactDesc">学术合作、教学交流或临床咨询，欢迎通过以下方式联系</p>
+
+                <div class="contact-grid">
+                    <a href="mailto:yangyang36656@163.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label" data-i18n="contactEmail">邮箱</span>
+                            <span class="contact-value">yangyang36656@163.com</span>
+                        </div>
+                        <div class="contact-arrow"><span class="contact-arrow-icon"><i data-lucide="arrow-right"></i></span></div>
+                    </a>
+
+                    <a href="https://www.douyin.com/search/yangyang36656" target="_blank" rel="noopener" class="contact-card" id="douyin-link">
+                        <div class="contact-icon douyin-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.69a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.12z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label" data-i18n="contactDouyin">抖音</span>
+                            <span class="contact-value">yangyang36656</span>
+                        </div>
+                        <div class="contact-arrow"><span class="contact-arrow-icon"><i data-lucide="arrow-right"></i></span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-container">
+                <p data-i18n="footerText">© 2026 杨洋 · 广州医科大学附属妇女儿童医疗中心 PICU</p>
+                <p class="footer-sub" data-i18n="footerMotto">生命所系，性命相托</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
