@@ -55,7 +55,9 @@ const i18n = {
         contactEmail: '邮箱',
         contactDouyin: '抖音',
         footerText: '© 2026 杨洋 · 广州医科大学附属妇女儿童医疗中心 PICU',
-        footerMotto: '生命所系，性命相托'
+        footerMotto: '生命所系，性命相托',
+        visitorLabel: '访客',
+        visitorUnit: '人到访'
     },
     en: {
         logoText: 'Yang Yang\'s Homepage',
@@ -112,7 +114,9 @@ const i18n = {
         contactEmail: 'Email',
         contactDouyin: 'Douyin',
         footerText: '© 2026 Yang Yang · Guangzhou Women and Children\'s Medical Center PICU',
-        footerMotto: 'Where life is entrusted, life is committed'
+        footerMotto: 'Where life is entrusted, life is committed',
+        visitorLabel: 'Visitors',
+        visitorUnit: 'visits'
     }
 };
 
@@ -215,6 +219,33 @@ function checkQuoteChange() {
     updateQuote();
 }
 
+// ===== Visitor Counter =====
+function updateVisitorCount() {
+    const countEl = document.getElementById('visitor-count');
+    if (!countEl) return;
+
+    const STORAGE_KEY = 'yy_visitor_counted';
+    const API_NAMESPACE = 'wishwishes-personal-site';
+    const API_KEY = 'visitor-counts';
+
+    const alreadyCounted = sessionStorage.getItem(STORAGE_KEY);
+
+    const url = alreadyCounted
+        ? 'https://api.counterapi.dev/v1/' + API_NAMESPACE + '/' + API_KEY + '/up'
+        : 'https://api.counterapi.dev/v1/' + API_NAMESPACE + '/' + API_KEY + '/up';
+
+    fetch(url)
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            const count = data && data.count ? data.count : 0;
+            countEl.textContent = count.toLocaleString();
+            sessionStorage.setItem(STORAGE_KEY, '1');
+        })
+        .catch(function() {
+            countEl.textContent = '—';
+        });
+}
+
 // ===== Navbar Scroll Effect =====
 function handleNavScroll() {
     const navbar = document.getElementById('navbar');
@@ -258,6 +289,7 @@ document.addEventListener('DOMContentLoaded', function() {
     switchLang('zh');
     updateQuote();
     updateClock();
+    updateVisitorCount();
     setInterval(updateClock, 1000);
     setInterval(checkQuoteChange, 5000);
 });
